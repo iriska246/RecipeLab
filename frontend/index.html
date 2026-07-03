@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeLab — Multi-Agent Culinary Assistant</title>
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Frontend Logic -->
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="glow-bg"></div>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="logo-area">
+                <span class="logo-icon">🍳</span>
+                <div class="title-sub">
+                    <h1>RecipeLab</h1>
+                    <span class="badge">Multi-Agent System</span>
+                </div>
+            </div>
+
+            <div class="api-key-area" id="apiKeyArea">
+                <input
+                    type="password"
+                    id="apiKeyInput"
+                    placeholder="Paste Gemini API Key (optional)"
+                    autocomplete="off"
+                    title="Your key is stored only in your browser's localStorage"
+                >
+                <button id="saveApiKeyBtn" class="btn btn-small">Save Key</button>
+                <span id="apiKeyStatus" style="font-size:0.75rem; color: var(--text-muted); margin-right: 1rem;"></span>
+
+                <input
+                    type="password"
+                    id="spoonKeyInput"
+                    placeholder="Spoonacular API Key (optional)"
+                    autocomplete="off"
+                    title="Optional: Used for richer internet recipe recommendations. Saved to backend .env"
+                >
+                <button id="saveSpoonKeyBtn" class="btn btn-small">Save Key</button>
+                <span id="spoonKeyStatus" style="font-size:0.75rem; color: var(--text-muted);"></span>
+            </div>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="main-grid">
+            <!-- Left Side: Chat Panel -->
+            <section class="panel chat-panel">
+                <div class="panel-header">
+                    <h2>Culinary Concierge Agent</h2>
+                    <span class="status-indicator online">Connected</span>
+                </div>
+                <div id="chatMessages" class="chat-messages">
+                    <div class="message assistant">
+                        <div class="message-content">
+                            <p>Greetings! I am your <strong>Elite Culinary Concierge</strong>. I coordinate with our specialized sub-agents to help you plan meals, track ingredients, and build your shopping list.</p>
+                            <p>Select your pantry items on the right and ask me questions like:</p>
+                            <ul>
+                                <li><em>"What can I cook with tomatoes, eggs, and spinach?"</em></li>
+                                <li><em>"Show me Vegetarian options using ONLY what I have."</em></li>
+                                <li><em>"Add the missing ingredients for Creamy Mushroom Pasta to my shopping list."</em></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="thoughtIndicator" class="thought-indicator hidden">
+                    <div class="thought-header">
+                        <span class="spinner"></span>
+                        <span>Agent thoughts...</span>
+                    </div>
+                    <div id="thoughtText" class="thought-text"></div>
+                </div>
+                <form id="chatForm" class="chat-input-area">
+                    <input type="text" id="userInput" placeholder="Ask the Culinary Concierge..." required autocomplete="off">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </section>
+
+            <!-- Right Side: State Panel -->
+            <section class="panel dashboard-panel">
+                <div class="tab-headers">
+                    <button class="tab-btn active" data-tab="pantry-tab">🛒 Pantry & Diet</button>
+                    <button class="tab-btn" data-tab="shopping-tab">📋 Shopping List</button>
+                    <button class="tab-btn" data-tab="favorites-tab">⭐ Favorites</button>
+                </div>
+
+                <div class="tab-content-container">
+                    <!-- Tab 1: Pantry & Diet -->
+                    <div id="pantry-tab" class="tab-content active">
+                        <div class="section">
+                            <h3>Dietary Profile</h3>
+                            <div class="diet-tags">
+                                <label class="diet-chip">
+                                    <input type="checkbox" value="Vegetarian" class="diet-checkbox">
+                                    <span>Vegetarian</span>
+                                </label>
+                                <label class="diet-chip">
+                                    <input type="checkbox" value="Vegan" class="diet-checkbox">
+                                    <span>Vegan</span>
+                                </label>
+                                <label class="diet-chip">
+                                    <input type="checkbox" value="Gluten-Free" class="diet-checkbox">
+                                    <span>Gluten-Free</span>
+                                </label>
+                                <label class="diet-chip">
+                                    <input type="checkbox" value="Dairy-Free" class="diet-checkbox">
+                                    <span>Dairy-Free</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title-action">
+                                <h3>Pantry Ingredients</h3>
+                                <button id="addPantryItemBtn" class="btn btn-small">+ Add</button>
+                            </div>
+                            <div id="pantryList" class="pantry-list">
+                                <!-- Generated Dynamically -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 2: Shopping List -->
+                    <div id="shopping-tab" class="tab-content">
+                        <div class="section-title-action">
+                            <h3>Missing Ingredients to Buy</h3>
+                            <button id="clearShoppingListBtn" class="btn btn-danger btn-small">Clear</button>
+                        </div>
+                        <ul id="shoppingList" class="shopping-list">
+                            <!-- Generated Dynamically -->
+                        </ul>
+                    </div>
+
+                    <!-- Tab 3: Favorites -->
+                    <div id="favorites-tab" class="tab-content">
+                        <h3>Starred Recipes</h3>
+                        <div id="favoritesList" class="favorites-list">
+                            <!-- Generated Dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+</body>
+</html>

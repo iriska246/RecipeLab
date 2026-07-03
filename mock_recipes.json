@@ -1,0 +1,142 @@
+[
+  {
+    "id": "recipe_1",
+    "name": "Spinach Tomato Omelette",
+    "ingredients": ["eggs", "spinach", "tomatoes", "salt", "pepper", "butter"],
+    "is_gluten_free": true,
+    "is_dairy_free": false,
+    "is_vegetarian": true,
+    "is_vegan": false,
+    "instructions": "Whisk eggs with salt and pepper. Sauté spinach and diced tomatoes in butter until tender. Pour in the eggs and cook until set."
+  },
+  {
+    "id": "recipe_2",
+    "name": "Vegan Avocado Toast",
+    "ingredients": ["bread", "avocado", "tomatoes", "olive oil", "salt", "chili flakes"],
+    "is_gluten_free": false,
+    "is_dairy_free": true,
+    "is_vegetarian": true,
+    "is_vegan": true,
+    "instructions": "Toast the bread. Mash the avocado and spread it evenly on the toast. Top with sliced tomatoes, a drizzle of olive oil, salt, and chili flakes."
+  },
+  {
+    "id": "recipe_3",
+    "name": "Gluten-Free Banana Pancakes",
+    "ingredients": ["bananas", "eggs", "almond milk", "oat flour", "maple syrup"],
+    "is_gluten_free": true,
+    "is_dairy_free": true,
+    "is_vegetarian": true,
+    "is_vegan": false,
+    "instructions": "Mash bananas and whisk with eggs and almond milk. Fold in oat flour. Scoop onto a hot griddle, cook until golden on both sides, and serve with maple syrup."
+  },
+  {
+    "id": "recipe_4",
+    "name": "Creamy Mushroom Pasta",
+    "ingredients": ["pasta", "mushrooms", "cream", "garlic", "parmesan", "olive oil", "parsley"],
+    "is_gluten_free": false,
+    "is_dairy_free": false,
+    "is_vegetarian": true,
+    "is_vegan": false,
+    "instructions": "Boil pasta. Sauté sliced mushrooms and garlic in olive oil. Stir in heavy cream and parmesan. Toss with drained pasta and garnish with parsley."
+  },
+  {
+    "id": "recipe_5",
+    "name": "Classic Grilled Cheese",
+    "ingredients": ["bread", "cheddar cheese", "butter"],
+    "is_gluten_free": false,
+    "is_dairy_free": false,
+    "is_vegetarian": true,
+    "is_vegan": false,
+    "instructions": "Butter bread slices. Place cheese between bread. Grill on a medium-hot pan until bread is golden brown and cheese is melted."
+  },
+  {
+    "id": "recipe_6",
+    "name": "Vegan Chickpea Curry",
+    "ingredients": ["chickpeas", "coconut milk", "tomatoes", "onion", "garlic", "spinach", "curry powder", "rice"],
+    "is_gluten_free": true,
+    "is_dairy_free": true,
+    "is_vegetarian": true,
+    "is_vegan": true,
+    "instructions": "Sauté diced onion and garlic. Add curry powder, tomatoes, chickpeas, and coconut milk. Simmer for 15 minutes, stir in spinach until wilted, and serve over rice."
+  },
+  {
+    "id": "recipe_7",
+    "name": "Simple Garlic Butter Shrimp",
+    "ingredients": ["shrimp", "butter", "garlic", "lemon juice", "parsley"],
+    "is_gluten_free": true,
+    "is_dairy_free": false,
+    "is_vegetarian": false,
+    "is_vegan": false,
+    "instructions": "Melt butter in a pan. Add minced garlic and sauté. Toss in shrimp and cook until pink. Drizzle with lemon juice and parsley."
+  },
+  {
+    "id": "recipe_8",
+    "name": "Sour Cream Pancakes",
+    "ingredients": ["flour", "eggs", "sour cream", "sugar", "baking soda", "salt", "butter"],
+    "is_gluten_free": false,
+    "is_dairy_free": false,
+    "is_vegetarian": true,
+    "is_vegan": false,
+    "instructions": "Mix flour, sugar, baking soda, and salt in a bowl. In a separate bowl, whisk eggs and sour cream together until smooth. Fold the wet ingredients into the dry until just combined. Melt butter on a non-stick pan over medium heat. Pour small ladlefuls of batter and cook until bubbles form on top (about 2 min), flip and cook 1–2 min more. Serve warm with jam or syrup."
+  },
+  {
+    "id": "recipe_9",
+    "name": "Classic Fluffy Pancakes",
+    "ingredients": ["flour", "eggs", "milk", "sugar", "baking soda", "salt", "butter"],
+    "is_gluten_free": false,
+    "is_dairy_free": false,
+    "is_vegetarian": true,
+    "is_vegan": false,
+    "instructions": "Whisk together flour, sugar, baking soda, and salt. In another bowl, beat eggs with milk. Combine wet and dry ingredients until smooth. Melt butter in a pan and pour batter. Cook until bubbles appear on the surface, flip and cook until golden."
+  },
+  {
+    "id": "recipe_10",
+    "name": "Simple Scrambled Eggs",
+    "ingredients": ["eggs", "butter", "salt", "pepper", "milk"],
+    "is_gluten_free": true,
+    "is_dairy_free": false,
+    "is_vegetarian": true,
+    "is_vegan": false,
+    "instructions": "Crack eggs into a bowl with a splash of milk, salt, and pepper. Whisk well. Melt butter in a pan over low heat. Pour in eggs and slowly stir with a spatula until softly set. Serve immediately."
+  },
+  {
+    "id": "recipe_11",
+    "name": "Honey Sour Cream Muffins",
+    "ingredients": ["flour", "eggs", "sour cream", "sugar", "baking soda", "honey", "butter", "salt"],
+    "is_gluten_free": false,
+    "is_dairy_free": false,
+    "is_vegetarian": true,
+    "is_vegan": false,
+    "instructions": "Preheat oven to 180°C (350°F). Mix flour, sugar, baking soda, and salt. In another bowl beat eggs, sour cream, melted butter, and honey. Combine wet and dry ingredients. Pour into muffin tins lined with paper cases and bake for 20–25 minutes until golden."
+  },
+  {
+    "id": "recipe_12",
+    "name": "Cheesy Egg Omelette",
+    "ingredients": ["eggs", "cheddar cheese", "butter", "salt", "pepper"],
+    "is_gluten_free": true,
+    "is_dairy_free": false,
+    "is_vegetarian": true,
+    "is_vegan": false,
+    "instructions": "Whisk eggs with salt and pepper. Melt butter in a non-stick pan. Pour in eggs and cook on low heat without stirring. When almost set, sprinkle shredded cheddar on one half and fold the omelette over. Slide onto plate and serve."
+  },
+  {
+    "id": "recipe_13",
+    "name": "Quick Sugar Crepes",
+    "ingredients": ["flour", "eggs", "milk", "sugar", "butter", "salt"],
+    "is_gluten_free": false,
+    "is_dairy_free": false,
+    "is_vegetarian": true,
+    "is_vegan": false,
+    "instructions": "Blend flour, eggs, milk, sugar, melted butter, and salt into a thin smooth batter. Let rest 15 min. Pour a thin layer into a lightly buttered hot pan, swirl to coat, cook 1 min each side until lightly golden. Serve with jam, sour cream, or honey."
+  },
+  {
+    "id": "recipe_14",
+    "name": "Baking Soda Soda Bread",
+    "ingredients": ["flour", "baking soda", "salt", "sour cream", "butter"],
+    "is_gluten_free": false,
+    "is_dairy_free": false,
+    "is_vegetarian": true,
+    "is_vegan": false,
+    "instructions": "Preheat oven to 200°C. Mix flour, baking soda, and salt. Rub in cold butter until crumbly. Stir in sour cream to make a soft dough. Shape into a round loaf, score an X on top, and bake for 30–35 minutes until hollow-sounding when tapped."
+  }
+]
